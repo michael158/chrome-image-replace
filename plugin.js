@@ -8,6 +8,8 @@ $(document).ready(function () {
        'https://scontent.fbsb8-2.fna.fbcdn.net/v/t1.0-9/228193_223009124392432_2254282_n.jpg?_nc_cat=0&oh=207fb09bac29ab0765fd8f11a2c3352f&oe=5B6DB180',
        'https://scontent.fbsb8-2.fna.fbcdn.net/v/t1.0-9/12507192_1240682235958444_2155802837189658540_n.jpg?oh=2232d0b86d35567d9d4d8e34f156d6e9&oe=5B72A1CF',
        'https://scontent.fbsb8-2.fna.fbcdn.net/v/t1.0-9/10492532_902205623139442_1196565225083864110_n.jpg?_nc_cat=0&oh=b43e5e84a667cf9a538a7938dd57a22d&oe=5B732BE8',
+       'https://scontent.fbsb8-2.fna.fbcdn.net/v/t1.0-9/14581575_1465462136813785_6052988396935981595_n.jpg?_nc_cat=0&oh=3334c38f401f5ed86e8f8d70c6d3bf22&oe=5B41FAB5',
+       'https://scontent.fbsb8-2.fna.fbcdn.net/v/t1.0-9/14595618_1465462140147118_2689457705870317966_n.jpg?_nc_cat=0&oh=f853484502188ad36f2b0f405b783ee4&oe=5B27A46C',
    ];
 
    replaceImages();
@@ -24,7 +26,7 @@ $(document).ready(function () {
 
    function getImage()
    {
-        return images[Math.floor(Math.random() * 6)];
+        return images[Math.floor(Math.random() * (images.length - 1))];
    }
 
     /**
