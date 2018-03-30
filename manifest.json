@@ -5,7 +5,7 @@
   "manifest_version": 2,
   "browser_action": {
     "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
+    "default_icon": "icon.ico"
   },
 
   "commands": {
@@ -22,5 +22,8 @@
       "matches": ["<all_urls>"],
       "js": ["jquery.js","plugin.js"]
     }
+  ],
+  "web_accessible_resources": [
+    "images/*"
   ]
 }
